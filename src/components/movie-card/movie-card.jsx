@@ -22,7 +22,7 @@ export class MovieCard extends React.Component {
     const token = localStorage.getItem('token');
 
     axios.post(
-      ` https://intense-ridge-76926.herokuapp.com//users/${Username}/movies/${movie._id}`,
+      ` https://intense-ridge-76926.herokuapp.com/users/${Username}/movies/${movie._id}`,
       {
         FavoriteMovies: this.state.FavoriteMovies
       },
