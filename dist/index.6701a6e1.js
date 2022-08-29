@@ -41659,6 +41659,7 @@ function RegistrationView(props) {
     const [username, setUsername] = _react.useState('');
     const [password, setPassword] = _react.useState('');
     const [email, setEmail] = _react.useState('');
+    const [birthday, setBirthday] = _react.useState('');
     const handleSubmit = (e)=>{
         e.preventDefault();
         console.log(username, password);
@@ -41679,14 +41680,14 @@ function RegistrationView(props) {
     return(/*#__PURE__*/ _jsxRuntime.jsxs("form", {
         __source: {
             fileName: "src/components/registration-view/registration-view.jsx",
-            lineNumber: 37
+            lineNumber: 38
         },
         __self: this,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsxs("label", {
                 __source: {
                     fileName: "src/components/registration-view/registration-view.jsx",
-                    lineNumber: 38
+                    lineNumber: 39
                 },
                 __self: this,
                 children: [
@@ -41698,7 +41699,7 @@ function RegistrationView(props) {
                         ,
                         __source: {
                             fileName: "src/components/registration-view/registration-view.jsx",
-                            lineNumber: 40
+                            lineNumber: 41
                         },
                         __self: this
                     })
@@ -41707,7 +41708,7 @@ function RegistrationView(props) {
             /*#__PURE__*/ _jsxRuntime.jsxs("label", {
                 __source: {
                     fileName: "src/components/registration-view/registration-view.jsx",
-                    lineNumber: 42
+                    lineNumber: 43
                 },
                 __self: this,
                 children: [
@@ -41719,7 +41720,7 @@ function RegistrationView(props) {
                         ,
                         __source: {
                             fileName: "src/components/registration-view/registration-view.jsx",
-                            lineNumber: 44
+                            lineNumber: 45
                         },
                         __self: this
                     })
@@ -41728,7 +41729,7 @@ function RegistrationView(props) {
             /*#__PURE__*/ _jsxRuntime.jsxs("label", {
                 __source: {
                     fileName: "src/components/registration-view/registration-view.jsx",
-                    lineNumber: 46
+                    lineNumber: 47
                 },
                 __self: this,
                 children: [
@@ -41740,7 +41741,7 @@ function RegistrationView(props) {
                         ,
                         __source: {
                             fileName: "src/components/registration-view/registration-view.jsx",
-                            lineNumber: 48
+                            lineNumber: 49
                         },
                         __self: this
                     })
@@ -41751,7 +41752,7 @@ function RegistrationView(props) {
                 onClick: handleSubmit,
                 __source: {
                     fileName: "src/components/registration-view/registration-view.jsx",
-                    lineNumber: 50
+                    lineNumber: 51
                 },
                 __self: this,
                 children: "Submit"
@@ -41759,7 +41760,7 @@ function RegistrationView(props) {
         ]
     }));
 }
-_s(RegistrationView, "c5uj1OKRDMYLnb5oGCboYRk2Pyw=");
+_s(RegistrationView, "oodxkowr8L/+sgf0pg4pF6PrtNw=");
 _c = RegistrationView;
 RegistrationView.propTypes = {
 };
