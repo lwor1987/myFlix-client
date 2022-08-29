@@ -25827,7 +25827,6 @@ class MainView extends _reactDefault.default.Component {
                                 className: "main-view"
                             }));
                             return(/*#__PURE__*/ _jsxRuntime.jsx(_moviesListDefault.default, {
-                                movies: movies
                             }));
                         },
                         __source: {
@@ -41922,7 +41921,7 @@ class MovieCard extends _reactDefault.default.Component {
 MovieCard.propTypes = {
     movie: _propTypesDefault.default.shape({
         Title: _propTypesDefault.default.string.isRequired,
-        Description: _propTypesDefault.default.string.isRequired,
+        //Description: PropTypes.string.isRequired,
         Genre: _propTypesDefault.default.shape({
             Name: _propTypesDefault.default.string.isRequired,
             Description: _propTypesDefault.default.string.isRequired
@@ -43037,9 +43036,10 @@ var _visibilityFilterInput = require("../visibility-filter-input/visibility-filt
 var _visibilityFilterInputDefault = parcelHelpers.interopDefault(_visibilityFilterInput);
 var _movieCard = require("../movie-card/movie-card");
 const mapStateToProps = (state)=>{
-    const { visibilityFilter  } = state;
+    const { visibilityFilter , movies  } = state;
     return {
-        visibilityFilter
+        visibilityFilter,
+        movies
     };
 };
 function MoviesList(props) {
@@ -43076,7 +43076,7 @@ function MoviesList(props) {
                     __self: this
                 })
             }),
-            filteredMovies.map((m)=>/*#__PURE__*/ _jsxRuntime.jsx(_colDefault.default, {
+            filteredMovies.map((m, i)=>/*#__PURE__*/ _jsxRuntime.jsx(_colDefault.default, {
                     xs: 12,
                     sm: 6,
                     md: 3,
@@ -43093,7 +43093,7 @@ function MoviesList(props) {
                         },
                         __self: this
                     })
-                }, movies._id)
+                }, i)
             )
         ]
     }));
