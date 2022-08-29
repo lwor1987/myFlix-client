@@ -159,7 +159,7 @@ class MainView extends React.Component {
               <DirectorView
                   director={movies.find(m => m.Director.Name === match.params.name).Director}
                   onBackClick={() => history.goBack()}
-                  movies={movies.filter(movie => movies.Director.Name === match.params.name)} />
+                  movies={movies.filter( movie => movie.Director.Name === match.params.name)} />
           </Col>
       );
   }} />

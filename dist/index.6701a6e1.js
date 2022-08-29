@@ -25927,7 +25927,7 @@ class MainView extends _reactDefault.default.Component {
                                     ).Director,
                                     onBackClick: ()=>history.goBack()
                                     ,
-                                    movies: movies.filter((movie)=>movies.Director.Name === match.params.name
+                                    movies: movies.filter((movie)=>movie.Director.Name === match.params.name
                                     )
                                 })
                             }));
@@ -42881,7 +42881,7 @@ var _directorViewScss = require("./director-view.scss");
 class DirectorView extends _reactDefault.default.Component {
     render() {
         const { director , onBackClick  } = this.props;
-        rreturn(/*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
+        return(/*#__PURE__*/ _jsxRuntime.jsxs(_reactBootstrap.Container, {
             className: "director-view",
             __source: {
                 fileName: "src/components/director-view/director-view.jsx",
