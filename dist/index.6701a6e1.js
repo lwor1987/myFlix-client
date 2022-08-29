@@ -42650,6 +42650,7 @@ class ProfileView extends _reactDefault.default.Component {
                                             __self: this,
                                             children: [
                                                 /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Card.Img, {
+                                                    crossOrigin: "anonymous",
                                                     className: "fav-poster",
                                                     variant: "top",
                                                     src: movie.ImagePath,
@@ -42665,7 +42666,7 @@ class ProfileView extends _reactDefault.default.Component {
                                                     },
                                                     __source: {
                                                         fileName: "src/components/profile-view/profile-view.jsx",
-                                                        lineNumber: 278
+                                                        lineNumber: 279
                                                     },
                                                     __self: this,
                                                     children: [
@@ -42673,7 +42674,7 @@ class ProfileView extends _reactDefault.default.Component {
                                                             className: "movie_title",
                                                             __source: {
                                                                 fileName: "src/components/profile-view/profile-view.jsx",
-                                                                lineNumber: 279
+                                                                lineNumber: 280
                                                             },
                                                             __self: this,
                                                             children: movie.Title
@@ -42686,7 +42687,7 @@ class ProfileView extends _reactDefault.default.Component {
                                                             ,
                                                             __source: {
                                                                 fileName: "src/components/profile-view/profile-view.jsx",
-                                                                lineNumber: 282
+                                                                lineNumber: 283
                                                             },
                                                             __self: this,
                                                             children: "Remove"
@@ -42705,7 +42706,7 @@ class ProfileView extends _reactDefault.default.Component {
                     className: "backButton",
                     __source: {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 292
+                        lineNumber: 293
                     },
                     __self: this,
                     children: /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
@@ -42715,7 +42716,7 @@ class ProfileView extends _reactDefault.default.Component {
                         },
                         __source: {
                             fileName: "src/components/profile-view/profile-view.jsx",
-                            lineNumber: 293
+                            lineNumber: 294
                         },
                         __self: this,
                         children: "Back"
@@ -42724,7 +42725,7 @@ class ProfileView extends _reactDefault.default.Component {
                 /*#__PURE__*/ _jsxRuntime.jsx("br", {
                     __source: {
                         fileName: "src/components/profile-view/profile-view.jsx",
-                        lineNumber: 295
+                        lineNumber: 296
                     },
                     __self: this
                 })
