@@ -18,7 +18,7 @@ export class MovieView extends React.Component {
                   <Card id="movie-view">
                       <Card.Body>
                           <Card.Img
-                          crossOrigin='anonymous'
+                          
                               id="movie-view-image"
                               variant="top"
                               src={movie.ImagePath}
@@ -41,7 +41,29 @@ export class MovieView extends React.Component {
                       </Card.Body>
                   </Card>
                   <Button id="movie-view-button" onClick={() => { onBackClick(null); }}>Back</Button>
-                  <Button id="movie-view-button" onClick={() => { }}>Add to Favorites</Button>
+                  <Button id="movie-view-button" onClick={onAddFavorite = (movie) => {
+    const Username = localStorage.getItem('user');
+    const token = localStorage.getItem('token');
+
+    axios.post(
+      ` https://intense-ridge-76926.herokuapp.com/users/${Username}/movies/${movie._id}`,
+      {
+        FavoriteMovies: this.state.FavoriteMovies
+      },
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+      .then((response) => {
+        this.setState({
+          FavoriteMovies: response.data.FavoriteMovies
+        });
+        console.log(response);
+        alert("Movie Added");
+      })
+      .catch(function (error) {
+        console.log(error);
+      
+  });}}>Add to Favorites</Button>
               </Col>
           </Row>
       )}
