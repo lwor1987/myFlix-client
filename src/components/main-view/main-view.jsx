@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 
+import { Menu } from '../menu/menu';
+
 
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
