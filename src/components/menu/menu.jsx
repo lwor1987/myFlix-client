@@ -1,7 +1,7 @@
 import './menu.scss'
 import { Link } from 'react-router-dom';
 
-export function Menu (props) {
+export function Menu (_props) {
 
 	return (
 		<nav className="menu-container">
