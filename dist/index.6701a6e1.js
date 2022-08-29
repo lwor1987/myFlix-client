@@ -41762,7 +41762,6 @@ function RegistrationView(props) {
 _s(RegistrationView, "c5uj1OKRDMYLnb5oGCboYRk2Pyw=");
 _c = RegistrationView;
 RegistrationView.propTypes = {
-    onRegistration: _propTypesDefault.default.func.isRequired
 };
 var _c;
 $RefreshReg$(_c, "RegistrationView");
