@@ -5,7 +5,7 @@ export function Menu(props) {
     return(
         <nav className="menu-container">
             <Link to= '/'>Home</Link>
-            <Link to= '/'>Profile</Link>
+            <Link to= '/profile'>Profile</Link>
         </nav>
     )
 }
