@@ -42010,7 +42010,7 @@ class MovieView extends _reactDefault.default.Component {
                                         className: "movie-title",
                                         __source: {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 26
+                                            lineNumber: 25
                                         },
                                         __self: this,
                                         children: movie.Title
@@ -42020,7 +42020,7 @@ class MovieView extends _reactDefault.default.Component {
                                         className: "movie-description",
                                         __source: {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 29
+                                            lineNumber: 28
                                         },
                                         __self: this,
                                         children: movie.Description
@@ -42030,7 +42030,7 @@ class MovieView extends _reactDefault.default.Component {
                                         className: "movie-director",
                                         __source: {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 35
+                                            lineNumber: 34
                                         },
                                         __self: this,
                                         children: [
@@ -42043,7 +42043,7 @@ class MovieView extends _reactDefault.default.Component {
                                         className: "movie-genre",
                                         __source: {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 38
+                                            lineNumber: 37
                                         },
                                         __self: this,
                                         children: [
@@ -42061,35 +42061,37 @@ class MovieView extends _reactDefault.default.Component {
                             },
                             __source: {
                                 fileName: "src/components/movie-view/movie-view.jsx",
-                                lineNumber: 43
+                                lineNumber: 42
                             },
                             __self: this,
                             children: "Back"
                         }),
                         /*#__PURE__*/ _jsxRuntime.jsx(_reactBootstrap.Button, {
                             id: "movie-view-button",
-                            onClick: onAddFavorite = (movie1)=>{
-                                const Username = localStorage.getItem('user');
-                                const token = localStorage.getItem('token');
-                                axios.post(` https://intense-ridge-76926.herokuapp.com/users/${Username}/movies/${movie1._id}`, {
-                                    FavoriteMovies: this.state.FavoriteMovies
-                                }, {
-                                    headers: {
-                                        Authorization: `Bearer ${token}`
-                                    }
-                                }).then((response)=>{
-                                    this.setState({
-                                        FavoriteMovies: response.data.FavoriteMovies
+                            onClick: ()=>{
+                                onAddFavorite = (movie1)=>{
+                                    const Username = localStorage.getItem('user');
+                                    const token = localStorage.getItem('token');
+                                    axios.post(` https://intense-ridge-76926.herokuapp.com/users/${Username}/movies/${movie1._id}`, {
+                                        FavoriteMovies: this.state.FavoriteMovies
+                                    }, {
+                                        headers: {
+                                            Authorization: `Bearer ${token}`
+                                        }
+                                    }).then((response)=>{
+                                        this.setState({
+                                            FavoriteMovies: response.data.FavoriteMovies
+                                        });
+                                        console.log(response);
+                                        alert("Movie Added");
+                                    }).catch(function(error) {
+                                        console.log(error);
                                     });
-                                    console.log(response);
-                                    alert("Movie Added");
-                                }).catch(function(error) {
-                                    console.log(error);
-                                });
+                                };
                             },
                             __source: {
                                 fileName: "src/components/movie-view/movie-view.jsx",
-                                lineNumber: 44
+                                lineNumber: 43
                             },
                             __self: this,
                             children: "Add to Favorites"

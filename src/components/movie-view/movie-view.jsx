@@ -18,7 +18,6 @@ export class MovieView extends React.Component {
                   <Card id="movie-view">
                       <Card.Body>
                           <Card.Img
-                          
                               id="movie-view-image"
                               variant="top"
                               src={movie.ImagePath}
@@ -41,7 +40,7 @@ export class MovieView extends React.Component {
                       </Card.Body>
                   </Card>
                   <Button id="movie-view-button" onClick={() => { onBackClick(null); }}>Back</Button>
-                  <Button id="movie-view-button" onClick={onAddFavorite = (movie) => {
+                  <Button id="movie-view-button" onClick={() => { onAddFavorite = (movie) => {
     const Username = localStorage.getItem('user');
     const token = localStorage.getItem('token');
 
@@ -62,8 +61,8 @@ export class MovieView extends React.Component {
       })
       .catch(function (error) {
         console.log(error);
-      
-  });}}>Add to Favorites</Button>
+      });
+  };}}>Add to Favorites</Button>
               </Col>
           </Row>
       )}
