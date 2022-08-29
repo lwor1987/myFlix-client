@@ -137,7 +137,7 @@ class MainView extends React.Component {
               return (
                <Col md={8}>
                 <GenreView 
-                genre={movies.find( m => m.Genre.Name.toLowercase ()=== match.params.name.toLowercase ()).Genre} onBackClick={() => history.goBack()} 
+                genre={movies.find( m => m.Genre.Name.toLowerCase ()=== match.params.name.toLowerCase ()).Genre} onBackClick={() => history.goBack()} 
                />
               </Col>
               )
